@@ -1,10 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
 @import './base.css';
+@import "tailwindcss";
+
+:root {
+
+  --bg-primary: #050816;
+  --bg-secondary: #0A1120;
+  --bg-card: #101827;
+
+  --primary: #00A63E;
+  --primary-hover: #00C94A;
+  --accent: #34FF88;
+  --glow: #7CFFB2;
+
+  --text-primary: #FFFFFF;
+  --text-secondary: #C7D0DD;
+  --text-muted: #748298;
+
+  --border: rgba(255, 255, 255, .08);
+  --border-hover: rgba(255, 255, 255, .15);
+
+  --glass: rgba(255, 255, 255, .05);
+
+  --gradient-primary:
+    linear-gradient(135deg,
+      #00A63E,
+      #34FF88);
+
+  --gradient-hero:
+    radial-gradient(circle at top center,
+      rgba(0, 166, 62, .35),
+      transparent 55%);
+}
+
+html,
+body,
+#app {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Jost', sans-serif;
+
+  background:
+    linear-gradient(
+      -45deg,
+      #050816,
+      #001b2e,
+      #18003a,
+      #001f3f,
+      #050816
+    );
+
+  background-size: 400% 400%;
+
+  animation: rgbBackground 12s ease infinite;
+}
+
+/* @keyframes rgbBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+} */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--gradient-hero);
+  color: var(--text-primary);
+  min-height: 100vh;
+}
 
 #app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  padding: 0;
+  margin: 0;
+  width: 100%;
   font-weight: normal;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--gradient-primary);
 }
 
 a,
@@ -12,7 +97,7 @@ a,
   text-decoration: none;
   color: hsla(160, 100%, 37%, 1);
   transition: 0.4s;
-  padding: 3px;
+  padding: 5px;
 }
 
 @media (hover: hover) {
@@ -23,13 +108,13 @@ a,
 
 @media (min-width: 1024px) {
   body {
-    display: flex;
-    place-items: center;
+    flex-wrap: wrap;
   }
 
   #app {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
+    /* background-color: var(--gradient-primary); */
   }
 }
