@@ -25,21 +25,21 @@ function closeCV() {
 
 <template>
 
-  <!-- <HeroSection @open-cv="openCV"/> -->
+  <HeroSection @open-cv="openCV"/>
 
   <CVModal :is-open="showCV" @close="closeCV" />
 
   <AboutSection />
 
-  <!-- <SkillsSection /> -->
+  <SkillsSection />
 
-  <!-- <ProjectsSection /> -->
+  <ProjectsSection />
 
-  <!-- <EducationSection /> -->
+  <EducationSection />
 
-  <!-- <ExperienceSection /> -->
+  <ExperienceSection />
 
-  <!-- <ContactSection /> -->
+  <ContactSection />
 
   <FooterSection />
 </template>

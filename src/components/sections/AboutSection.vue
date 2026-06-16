@@ -1,10 +1,9 @@
 <template>
-  <section>
-    <div>
-      <h1 class="text-3xl font-semibold text-center mx-auto">About our apps</h1>
+  <section id="about">
+    <div id="about-head">
+      <h1 class="text-3xl font-semibold text-center mx-auto">Sobre mí</h1>
       <p class="text-sm text-slate-500 text-center mt-2 max-w-md mx-auto">
-        A visual collection of our most recent works - each piece crafted with
-        intention, emotion and style.
+        El mundo esta lleno de oportunidades. ¿Que hacer con ellas? Eso depende de la visión de cada persona.
       </p>
     </div>
     <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-center gap-8 px-4 md:px-0 py-10">
@@ -68,4 +67,21 @@
   </section>
 </template>
 
-<style scoped></style>
+<style scoped>
+section#about {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px 20px 0px;
+  margin: 5px 0px 5px 0px;
+}
+
+
+div#about-head {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+}
+</style>

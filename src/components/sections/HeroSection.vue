@@ -457,7 +457,11 @@ nav {
 
 .flex.flex-wrap.items-center.justify-center.p-1\.5.mt-24.rounded-full.border.border-green-900.bg-green-700\/15.text-xs {
   padding: 5px;
-  margin: 10px;
+  margin: 15px;
+}
+
+p.text-slate-300.md\:text-base.max-md\:px-2.text-center.max-w-2xl.mt-3 {
+    padding: 3% 0 3% 0;
 }
 
 </style>

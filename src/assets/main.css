@@ -41,15 +41,26 @@ body,
   min-height: 100vh;
   font-family: 'Jost', sans-serif;
 
-  background:
-    linear-gradient(
-      -45deg,
+  min-height: 100vh;
+
+  background-color: black;
+
+  /* background-image:
+    url("https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/hero/green-gradient-bg.svg"); */
+
+  background-repeat: no-repeat;
+
+  background-position: center top;
+
+  background-size: cover;
+
+  /* background:
+    linear-gradient(-45deg,
       #050816,
       #001b2e,
       #18003a,
       #001f3f,
-      #050816
-    );
+      #050816); */
 
   background-size: 400% 400%;
 
@@ -72,6 +83,12 @@ body,
 
 html {
   scroll-behavior: smooth;
+}
+
+section {
+    border-bottom-color: rgba(119, 153, 129, 0.342);
+    border-bottom-style: outset;
+    border-bottom-width: 1px;
 }
 
 body {
