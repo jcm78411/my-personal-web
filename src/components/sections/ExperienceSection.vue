@@ -6,7 +6,7 @@ import { experiences } from '../data/experience'
 <template>
   <section id="experience" class="experience-section">
     <section class="py-16 px-4">
-      <h1 class='font-semibold text-gray-900 text-3xl sm:text-4xl text-center mx-auto'>Don't just take our words</h1>
+      <h1 class='font-semibold text-gray-900 text-3xl sm:text-4xl text-center mx-auto'>Dónde he trabajado...</h1>
       <p class='text-sm/relaxed text-gray-600 text-center mt-2 max-w-xl mx-auto'>Hear what our users say about us. We're
         always looking for ways to improve. If you have a positive experience with us, leave a review.</p>
       <div class="relative max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4 md:px-0 pt-16">

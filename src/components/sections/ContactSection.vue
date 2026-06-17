@@ -5,13 +5,13 @@
 
         <div class="flex flex-col items-start text-left">
             <div class="inline-flex items-center justify-center border border-zinc-200 bg-zinc-50 rounded-full px-4 py-1.5 text-sm text-zinc-800 mb-4">
-                Contact us
+                Contáctame
             </div>
             <h1 class="text-[40px] font-medium text-zinc-900 leading-tight mb-1.5">
-                Still have questions?
+                Tienes preguntas? Estoy aquí para ayudarte.
             </h1>
             <p class="text-sm text-zinc-600 max-w-[360px] mb-6 leading-relaxed">
-                Need help with components, setup, or customization? We're here to support you.
+                ¿Necesitas ayuda con componentes, configuración o personalización? Estamos aquí para apoyarte.
             </p>
 
             <div class="flex flex-col space-y-5">

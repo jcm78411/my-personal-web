@@ -5,14 +5,11 @@ import { projects } from '../data/projects'
 
 <template>
   <section id="projects">
-
-    <h2>Proyectos</h2>
-
     <div class="w-full py-20 px-6 flex flex-col items-center">
       <div class="text-center mx-auto">
         <span
           class="inline-flex items-center justify-center px-4 py-1.5 rounded-full bg-slate-50 text-base text-slate-800">
-          Our Features
+          Mis Proyectos
         </span>
         <h1 class="text-4xl md:text-5xl font-medium text-slate-900 mt-6">Build Faster and Grow Smarter</h1>
         <p class="text-sm md:text-base text-slate-600 mt-3 max-w-[530px] mx-auto">Build faster with powerful, flexible

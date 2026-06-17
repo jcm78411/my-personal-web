@@ -7,7 +7,7 @@ import { educationList } from '../data/education'
   <section id="education" class="education-section">
 
     <div class="text-center">
-      <h1 class="text-3xl md:text-4xl font-bold text-gray-800">What Our Students Say</h1>
+      <h1 class="text-3xl md:text-4xl font-bold text-gray-800">Educación</h1>
       <p class="text-sm md:text-base text-gray-500 mt-4">Join thousand of successful students who transformed their
         careers with us</p>
       <div class="flex flex-wrap justify-center gap-5 mt-16 text-left">

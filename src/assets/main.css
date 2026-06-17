@@ -1,37 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
 
-@import './base.css';
+@import "./base.css";
 @import "tailwindcss";
 
 :root {
-
   --bg-primary: #050816;
-  --bg-secondary: #0A1120;
+  --bg-secondary: #0a1120;
   --bg-card: #101827;
 
-  --primary: #00A63E;
-  --primary-hover: #00C94A;
-  --accent: #34FF88;
-  --glow: #7CFFB2;
+  --primary: #00a63e;
+  --primary-hover: #00c94a;
+  --accent: #34ff88;
+  --glow: #7cffb2;
 
-  --text-primary: #FFFFFF;
-  --text-secondary: #C7D0DD;
+  --text-primary: #ffffff;
+  --text-secondary: #c7d0dd;
   --text-muted: #748298;
 
-  --border: rgba(255, 255, 255, .08);
-  --border-hover: rgba(255, 255, 255, .15);
+  --border: rgba(255, 255, 255, 0.08);
+  --border-hover: rgba(255, 255, 255, 0.15);
 
-  --glass: rgba(255, 255, 255, .05);
+  --glass: rgba(255, 255, 255, 0.05);
 
-  --gradient-primary:
-    linear-gradient(135deg,
-      #00A63E,
-      #34FF88);
+  --gradient-primary: linear-gradient(135deg, #00441994, #34ff88);
 
-  --gradient-hero:
-    radial-gradient(circle at top center,
-      rgba(0, 166, 62, .35),
-      transparent 55%);
+  --gradient-primary-dark: linear-gradient(135deg, #000000a4, #097432a6);
+
+  --gradient-hero: radial-gradient(
+    circle at top center,
+    rgba(0, 166, 62, 0.35),
+    transparent 55%
+  );
 }
 
 html,
@@ -39,8 +38,7 @@ body,
 #app {
   margin: 0;
   min-height: 100vh;
-  font-family: 'Jost', sans-serif;
-
+  font-family: "Jost", sans-serif;
   min-height: 100vh;
 
   background-color: black;
@@ -54,20 +52,20 @@ body,
 
   background-size: cover;
 
-  /* background:
+  background:
     linear-gradient(-45deg,
       #050816,
       #001b2e,
       #18003a,
       #001f3f,
-      #050816); */
+      #050816);
 
   background-size: 400% 400%;
 
   animation: rgbBackground 12s ease infinite;
 }
 
-/* @keyframes rgbBackground {
+@keyframes rgbBackground {
   0% {
     background-position: 0% 50%;
   }
@@ -79,16 +77,16 @@ body,
   100% {
     background-position: 0% 50%;
   }
-} */
+}
 
 html {
   scroll-behavior: smooth;
 }
 
 section {
-    border-bottom-color: rgba(119, 153, 129, 0.342);
-    border-bottom-style: outset;
-    border-bottom-width: 1px;
+  border-bottom-color: rgba(119, 153, 129, 0.342);
+  border-bottom-style: outset;
+  border-bottom-width: 1px;
 }
 
 body {
@@ -107,6 +105,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   background-color: var(--gradient-primary);
+  /* background-size: 20% 30%; */
+  /* background-repeat: no-repeat; */
 }
 
 a,

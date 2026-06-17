@@ -5,7 +5,7 @@ import { skills } from '../data/skills'
 
 <template>
   <section id="skills" class="skills-section">
-    <h1 class="text-3xl font-semibold text-center mx-auto">Latest Blog</h1>
+    <h1 class="text-3xl font-semibold text-center mx-auto">Habilidades</h1>
     <p class="text-sm text-slate-500 text-center mt-2 max-w-lg mx-auto">
       Stay ahead of the curve with fresh content on code, design, startups, and everything in between.
     </p>
