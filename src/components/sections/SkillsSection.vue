@@ -1,64 +1,116 @@
 <script setup>
-import SkillCard from '../cards/SkillCard.vue'
-import { skills } from '../data/skills'
+import SkillCard from "../cards/SkillCard.vue";
+// import { skills } from "../data/skills";
+import { skills } from "../data/archivos";
 </script>
 
 <template>
-  <section id="skills" class="skills-section">
-    <h1 class="text-3xl font-semibold text-center mx-auto">Habilidades</h1>
-    <p class="text-sm text-slate-500 text-center mt-2 max-w-lg mx-auto">
-      Stay ahead of the curve with fresh content on code, design, startups, and everything in between.
-    </p>
-
-    <div class="flex flex-wrap items-center justify-center gap-8 pt-12">
-      <div class="max-w-72 w-full hover:-translate-y-0.5 transition duration-300">
-        <img class="rounded-xl"
-          src="https://images.unsplash.com/photo-1590650516494-0c8e4a4dd67e?w=1200&h=800&auto=format&fit=crop&q=60"
-          alt="">
-        <h3 class="text-base text-slate-900 font-medium mt-3">Color Psychology in UI: How to Choose the Right Palette
-        </h3>
-        <p class="text-xs text-indigo-600 font-medium mt-1">UI/UX design</p>
-      </div>
-      <div class="max-w-72 w-full hover:-translate-y-0.5 transition duration-300">
-        <img class="rounded-xl"
-          src="https://images.unsplash.com/photo-1714974528646-ea024a3db7a7?w=1200&h=800&auto=format&fit=crop&q=60"
-          alt="">
-        <h3 class="text-base text-slate-900 font-medium mt-3">Color Psychology in UI: How to Choose the Right Palette
-        </h3>
-        <p class="text-xs text-indigo-600 font-medium mt-1">UI/UX design</p>
-      </div>
-      <div class="max-w-72 w-full hover:-translate-y-0.5 transition duration-300">
-        <img class="rounded-xl"
-          src="https://images.unsplash.com/photo-1713947501966-34897f21162e?w=1200&h=800&auto=format&fit=crop&q=60"
-          alt="">
-        <h3 class="text-base text-slate-900 font-medium mt-3">Color Psychology in UI: How to Choose the Right Palette
-        </h3>
-        <p class="text-xs text-indigo-600 font-medium mt-1">UI/UX design</p>
-      </div>
+  <section id="skills" class="skills-section w-full">
+    <div class="align-items-center justify-center w-full">
+      <h1 class="text-3xl font-semibold mx-auto">Habilidades</h1>
+      <p class="text-lg h-10 text-slate-500 mt-2 mx-auto">
+        Entre los conocimientos que poseo y las tecnologías que he usado están:
+      </p>
     </div>
 
+    <div class="flex flex-wrap items-center justify-center gap-8 pt-12">
+      <!-- ============================================================================================================================ -->
+
+      <div class="flex flex-wrap gap-6">
+        <div
+          v-for="skill in skills"
+          :key="skill.title"
+          class="group w-72 h-44 [perspective:1000px]"
+        >
+          <div
+            class="relative h-full w-full transition-all duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]"
+          >
+            <!-- Frente -->
+            <div
+              class="absolute inset-0 rounded-2xl p-6 text-white shadow-xl [backface-visibility:hidden]"
+              :class="`bg-gradient-to-br ${skill.gradient}`"
+            >
+              <div class="flex h-full flex-col justify-center items-center">
+                <span class="text-xs uppercase tracking-widest opacity-80">
+                  Especialidad
+                </span>
+
+                <h3 class="mt-2 text-2xl font-bold text-center">
+                  {{ skill.title }}
+                </h3>
+              </div>
+            </div>
+
+            <!-- Atrás -->
+            <div
+              class="absolute inset-0 rounded-2xl bg-slate-900 p-6 text-white shadow-xl [transform:rotateY(180deg)] [backface-visibility:hidden]"
+            >
+              <div
+                class="flex h-full flex-col justify-center items-center gap-3"
+              >
+                <h4 class="text-lg font-semibold">Tecnologías</h4>
+
+                <div class="flex flex-wrap rounded-full text-sm gap-2">
+                  <span
+                    v-for="tech in skill.techs"
+                    :key="tech.name"
+                    :class="tech.color"
+                  >
+                    {{ tech.name }}
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ============================================================================================================================ -->
+      <!-- ============================================================================================================================ -->
+      <!-- ============================================================================================================================ -->
+    </div>
   </section>
 </template>
 
 <style scoped>
 .skills-section {
   padding: 5rem 2rem;
+  align-items: center;
+  justify-items: center;
+  margin: 0% 2% 0% 2%;
 }
 
-.container {
-  /* max-width: 1200px; */
-  margin: 0 auto;
-}
+/* .align-items-center.justify-center.w-full {
+  margin-left: 30%;
+} */
 
 .skills-grid {
   display: grid;
-  grid-template-columns:
-    repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
 }
 
 h2 {
   text-align: center;
   margin-bottom: 3rem;
+  /* transition: scale 0.3s ease; */
+}
+
+.tech-badge {
+  border-radius: 9999px;
+  padding: 0.25rem 0.75rem;
+  height: 1.75rem;
+   min-width: 5rem;
+   white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: default;
+  transition: transform 300ms ease, box-shadow 300ms ease;
+}
+
+.tech-badge:hover {
+  transform: translateY(-4px) scale(1.1);
+  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.15);
 }
 </style>

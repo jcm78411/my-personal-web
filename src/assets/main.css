@@ -3,6 +3,10 @@
 @import "./base.css";
 @import "tailwindcss";
 
+/* * {
+    outline: 1px solid red;
+} */
+
 :root {
   --bg-primary: #050816;
   --bg-secondary: #0a1120;

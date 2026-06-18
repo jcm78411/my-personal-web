@@ -1,6 +1,9 @@
 <template>
   <section id="about">
     <div id="about-head">
+      <h3>
+        Hola... Soy Juan Cueto...
+      </h3>
       <h1 class="text-5xl font-semibold mx-auto">Sobre mí</h1>
 
       <p class="text-2xl text-slate-500 mt-2 w-full mx-auto">
