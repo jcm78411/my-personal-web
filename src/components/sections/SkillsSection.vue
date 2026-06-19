@@ -74,21 +74,36 @@ import { skills } from "../data/archivos";
 
 <style scoped>
 .skills-section {
-  padding: 5rem 2rem;
-  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
   justify-items: center;
-  margin: 0% 2% 0% 2%;
+  align-items: center;
+  padding: 3% 0% 4% 0%;
 }
 
-/* .align-items-center.justify-center.w-full {
-  margin-left: 30%;
+.align-items-center.justify-center.w-full {
+  /* padding-left: 15%; */
+  width: 75%;
+  padding-bottom: 2rem;
+}
+
+.flex.flex-wrap.items-center.justify-center.gap-8.pt-12 {
+    width: 75%;
+}
+
+/* .skills-grid {
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
 } */
-
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-}
 
 h2 {
   text-align: center;
@@ -100,13 +115,15 @@ h2 {
   border-radius: 9999px;
   padding: 0.25rem 0.75rem;
   height: 1.75rem;
-   min-width: 5rem;
-   white-space: nowrap;
+  min-width: 5rem;
+  white-space: nowrap;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: default;
-  transition: transform 300ms ease, box-shadow 300ms ease;
+  transition:
+    transform 300ms ease,
+    box-shadow 300ms ease;
 }
 
 .tech-badge:hover {

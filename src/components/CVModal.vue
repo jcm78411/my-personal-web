@@ -97,4 +97,8 @@ const emit = defineEmits(["close"]);
   padding: 5px 20px 5px 20px;
 }
 
+button.px-3.py-1.rounded-lg.text-slate-300.hover\:bg-slate-700.hover\:text-white.transition {
+    padding: 5px 8px 5px 8px;
+}
+
 </style>

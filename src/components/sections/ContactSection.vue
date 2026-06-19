@@ -1,85 +1,238 @@
 <template>
   <section class="px-4 py-16">
-    <div
-      class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-center gap-12 md:gap-16"
-    >
-      <!-- Texto -->
-      <div class="flex flex-col mt-10">
-        <p
-          class="text-sm font-medium text-zinc-500 uppercase mb-2 text-center md:text-left"
-        >
-          Get In Touch
-        </p>
-
-        <h1
-          class="text-5xl font-bold leading-tight text-zinc-900 max-w-xs mb-4 text-center md:text-left"
-        >
-          Let's build something real.
-        </h1>
-
-        <p
-          class="text-base leading-6 text-zinc-400 max-w-xs text-center md:text-left"
-        >
-          Let's turn your ideas into meaningful products that solve real
-          problems and create real impact.
-        </p>
-      </div>
-
-      <!-- Formulario -->
-      <div class="w-full max-w-sm border border-zinc-300 rounded-2xl p-8">
-        <h2 class="text-base font-medium text-zinc-800 mb-6">
-          Send Message
-        </h2>
-
-        <form class="flex flex-col gap-4">
-          <div class="flex flex-col gap-2">
-            <label class="text-xs text-zinc-400">
-              Name
-            </label>
-
-            <input
-              type="text"
-              placeholder="Enter your name"
-              class="w-full bg-zinc-50 border border-zinc-300 rounded-lg px-4 py-3 text-sm text-zinc-800 placeholder-zinc-400 outline-none focus:border-zinc-500 transition-colors"
-            />
+    <div class="background">
+      <div class="container">
+        <div class="screen">
+          <div class="screen-header">
+            <div class="screen-header-left">
+              <div class="screen-header-button close"></div>
+              <div class="screen-header-button maximize"></div>
+              <div class="screen-header-button minimize"></div>
+            </div>
+            <div class="screen-header-right">
+              <div class="screen-header-ellipsis"></div>
+              <div class="screen-header-ellipsis"></div>
+              <div class="screen-header-ellipsis"></div>
+            </div>
           </div>
-
-          <div class="flex flex-col gap-2">
-            <label class="text-xs text-zinc-400">
-              Email
-            </label>
-
-            <input
-              type="email"
-              placeholder="Enter your email"
-              class="w-full bg-zinc-50 border border-zinc-300 rounded-lg px-4 py-3 text-sm text-zinc-800 placeholder-zinc-400 outline-none focus:border-zinc-500 transition-colors"
-            />
+          <div class="screen-body">
+            <div class="screen-body-item left">
+              <div class="app-title">
+                <span>Tienes Algo que decir?</span>
+                <span>CONTACTAME...</span>
+              </div>
+              <div class="app-contact">CONTACTO : +57 316 961 1670</div>
+            </div>
+            <div class="screen-body-item">
+              <div class="app-form">
+                <div class="app-form-group">
+                  <input
+                    class="app-form-control"
+                    placeholder="Nombre"
+                    value=""
+                  />
+                </div>
+                <div class="app-form-group">
+                  <input class="app-form-control" placeholder="Correo" />
+                </div>
+                <div class="app-form-group">
+                  <input class="app-form-control" placeholder="Número de Contacto" />
+                </div>
+                <div class="app-form-group message">
+                  <input class="app-form-control" placeholder="Mensaje" />
+                </div>
+                <div class="app-form-group buttons">
+                  <button class="app-form-button">CANCEL</button>
+                  <div></div>
+                  <button class="app-form-button">SEND</button>
+                </div>
+              </div>
+            </div>
           </div>
-
-          <div class="flex flex-col gap-2">
-            <label class="text-xs text-zinc-400">
-              Message
-            </label>
-
-            <textarea
-              rows="4"
-              placeholder="Your message..."
-              class="w-full bg-zinc-50 border border-zinc-300 rounded-lg px-4 py-3 text-sm text-zinc-800 placeholder-zinc-400 outline-none focus:border-zinc-500 transition-colors resize-none"
-            ></textarea>
-          </div>
-
-          <button
-            type="submit"
-            class="bg-black hover:bg-zinc-800 text-white text-base py-3 rounded-lg transition-colors mt-1"
-          >
-            Send Message
-          </button>
-        </form>
+        </div>
       </div>
     </div>
   </section>
 </template>
 
 <style scoped>
-
+.container {
+  flex: 0 1 700px;
+  margin: auto;
+  padding: 10px;
+}
+.screen {
+  position: relative;
+  background: #3e3e3e;
+  border-radius: 15px;
+}
+.screen:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  right: 20px;
+  bottom: 0;
+  border-radius: 15px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+.screen-header {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background: #4d4d4f;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.screen-header-left {
+  margin-right: auto;
+}
+.screen-header-button {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 3px;
+  border-radius: 8px;
+  background: white;
+}
+.screen-header-button.close {
+  background: #ed1c6f;
+}
+.screen-header-button.maximize {
+  background: #e8e925;
+}
+.screen-header-button.minimize {
+  background: #74c54f;
+}
+.screen-header-right {
+  display: flex;
+}
+.screen-header-ellipsis {
+  width: 3px;
+  height: 3px;
+  margin-left: 2px;
+  border-radius: 8px;
+  background: #999;
+}
+.screen-body {
+  display: flex;
+}
+.screen-body-item {
+  flex: 1;
+  padding: 50px;
+}
+.screen-body-item.left {
+  display: flex;
+  flex-direction: column;
+}
+.app-title {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: #74c54f;
+  font-size: 26px;
+}
+.app-title:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 25px;
+  height: 4px;
+  background: #5a5758;
+}
+.app-contact {
+  margin-top: auto;
+  font-size: 8px;
+  color: #888;
+}
+.app-form-group {
+  margin-bottom: 15px;
+}
+.app-form-group.message {
+  margin-top: 40px;
+}
+.app-form-group.buttons {
+  margin-bottom: 0;
+  text-align: right;
+}
+.app-form-control {
+  width: 100%;
+  padding: 10px 0;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #666;
+  color: #ddd;
+  font-size: 14px;
+  text-transform: uppercase;
+  outline: none;
+  transition: border-color 0.2s;
+}
+.app-form-control::placeholder {
+  color: #666;
+}
+.app-form-control:focus {
+  border-bottom-color: #ddd;
+}
+.app-form-button {
+  background: none;
+  border: none;
+  color: #857179;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+}
+.app-form-button:hover {
+  color: #494044;
+}
+.credits {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  color: #ffa4bd;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+}
+.credits-link {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+.dribbble {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+}
+@media screen and (max-width: 520px) {
+  .screen-body {
+    flex-direction: column;
+  }
+  .screen-body-item.left {
+    margin-bottom: 30px;
+  }
+  .app-title {
+    flex-direction: row;
+  }
+  .app-title span {
+    margin-right: 12px;
+  }
+  .app-title:after {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .screen-body {
+    padding: 40px;
+  }
+  .screen-body-item {
+    padding: 0;
+  }
+}
 </style>

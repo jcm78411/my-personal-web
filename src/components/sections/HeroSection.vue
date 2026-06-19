@@ -43,8 +43,8 @@ const links = [
   { label: "Habilidades", href: "#skills" },
   { label: "Proyectos", href: "#projects" },
   { label: "Experiencia", href: "#experience" },
-  { label: "Educación", href: "#education" },
-  { label: "Contacto", href: "#contact" },
+  // { label: "Educación", href: "#education" },
+  // { label: "Contacto", href: "#contact" },
 ];
 
 const toggleMenu = () => {

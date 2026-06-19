@@ -1,9 +1,7 @@
 <template>
   <section id="about">
     <div id="about-head">
-      <h3>
-        Hola... Soy Juan Cueto...
-      </h3>
+      <h3>Hola... Soy Juan Cueto...</h3>
       <h1 class="text-5xl font-semibold mx-auto">Sobre mí</h1>
 
       <p class="text-2xl text-slate-500 mt-2 w-full mx-auto">
@@ -88,8 +86,10 @@
 
       <div id="stacks" class="w-1/3">
         <div class="flex flex-col gap-10 mt-6">
-          
-          <div class="card-hover flex items-center gap-4 p-4"  style="--border-color:#059669">
+          <div
+            class="card-hover flex items-center gap-4 p-4"
+            style="--border-color: #059669"
+          >
             <div
               class="w-12 h-9 flex items-center justify-center bg-indigo-50 border border-indigo-200 rounded"
             >
@@ -108,8 +108,11 @@
               </p>
             </div>
           </div>
-          
-          <div class="card-hover flex items-center gap-4" style="--border-color:#0891b2">
+
+          <div
+            class="card-hover flex items-center gap-4"
+            style="--border-color: #0891b2"
+          >
             <div
               class="w-12 h-9 flex items-center justify-center bg-indigo-50 border border-indigo-200 rounded"
             >
@@ -128,7 +131,10 @@
               </p>
             </div>
           </div>
-          <div class="card-hover flex items-center gap-4 p-4" style="--border-color:#4f46e5">
+          <div
+            class="card-hover flex items-center gap-4 p-4"
+            style="--border-color: #4f46e5"
+          >
             <div
               class="w-12 h-9 flex items-center justify-center bg-indigo-50 border border-indigo-200 rounded"
             >
@@ -149,7 +155,10 @@
             </div>
           </div>
 
-          <div class="card-hover flex items-center gap-4" style="--border-color:#c026d3">
+          <div
+            class="card-hover flex items-center gap-4"
+            style="--border-color: #c026d3"
+          >
             <div
               class="w-12 h-9 flex items-center justify-center bg-indigo-50 border border-indigo-200 rounded"
             >
@@ -191,6 +200,9 @@ section#about {
 div#about-head {
   margin-bottom: 25px;
   padding-bottom: 25px;
+  padding-left: 0px;
+  margin-left: 0px;
+  width: 75%;
 }
 
 .mt-3.flex.flex-wrap.gap-2 {
