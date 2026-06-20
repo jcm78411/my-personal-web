@@ -134,6 +134,7 @@ const submitForm = async () => {
           name="contact"
           method="POST"
           data-netlify="true"
+          netlify
           @submit.prevent="submitForm"
         >
           <input type="hidden" name="form-name" value="contact" />
