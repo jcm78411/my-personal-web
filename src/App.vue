@@ -35,11 +35,11 @@ function closeCV() {
 
   <ProjectsSection />
 
-  <!-- <EducationSection /> -->
-
   <ExperienceSection />
+  
+  <EducationSection />
 
-  <!-- <ContactSection /> -->
+  <ContactSection />
 
   <FooterSection />
 </template>

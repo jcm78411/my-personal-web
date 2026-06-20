@@ -17,7 +17,7 @@
     <div class="mt-5 space-y-2">
       <p class="text-sm text-slate-500">
         <span class="font-medium text-slate-300">
-          Entidad:
+          Entidad Emisora:
         </span>
         {{ certification.issuer }}
       </p>

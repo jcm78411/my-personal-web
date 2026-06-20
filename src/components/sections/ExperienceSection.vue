@@ -1,6 +1,5 @@
 <script setup>
-import ExperienceCard from "../cards/ExperienceCard.vue";
-import { experiences } from "../data/experience";
+
 import CertificationCard from "../cards/CertificationCard.vue";
 import PublicationCard from "../cards/PublicationCard.vue";
 
@@ -156,8 +155,7 @@ import {
       </div>
     </article>
 
-    <section
-    id="experience"
+    <div
     class="w-full py-24 px-6"
   >
     <div class="max-w-7xl mx-auto">
@@ -216,7 +214,7 @@ import {
       </div>
 
     </div>
-    </section>
+    </div>
   </section>
 </template>
 
@@ -231,6 +229,10 @@ import {
   align-content: center;
   width: 100%;
   padding: 4% 7% 4% 7%;
+}
+
+article{
+  width: 100%;
 }
 
 .container {
